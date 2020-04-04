@@ -2,8 +2,7 @@ sudo: required
 services:
  - docker
 
-
- before_install:
+before_install:
   - docker build -t vishwakv/docker-react-app -f Dockerfile.dev .
 
 script:
